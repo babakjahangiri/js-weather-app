@@ -3,9 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Java Script Weather App - Milestone 5</title>
   </head>
-  <body>
+  <body onload="init()">
+    <header class="container-fluid">
+      <div class="row">
+        <div class="xs-col-12">
+        <h1 class="title">Weather App</h1>
+        <h2 class="sub-title">Local Weather Around the Word</h2>
+        <br>
+        <select id="cities">
+          <option value="london" selected>London</option>
+          <option value="new york">New York</option>
+          <option value="amsterdam">Amsterdam</option>
+          <option value="madrid">Madrid</option>
+          <option value="paris">Paris</option>
+          <option value="rome">Rome</option>
+          <option value="johannesburg">Johannesburg</option>
+          <option value="sydney">Sydney</option>
+          <option value="kuala lumpur">Kuala Lumpur</option>
+          <option value="tehran">Tehran</option>
+          <option value="moscow">Moscow</option>
+          <option value="tokyo">Tokyo</option>
+        </select>
+      
+      </div>
+      </div>
+    </header>
+    <main class="container-fluid">
+       <section class="row">
+         <div class="xs-col-0 sm-col-0 md-col-1 lg-col-2"></div>
+        
+        <div class="main-weather xs-col-12 sm-col-12 md-col-10 lg-col-8">
+          <div class="weather-item"> <h3 id="city-name"></h3> </div>
+          <div class="weather-item"> <img id="weather-status-img" src=""><p id="weather-desc"></p></div>
+          <div class="weather-item"> <h4 id="weather-temp">&#176; C</h4> </div>
+          <div class="weather-item"> <h4 id="feelslike"></h4></div>
+          <br>
+          <div class="weather-item">
+            <div class="weather-items-temp row">
+                <div class="weather-temp-item xs-col-6 sm-col-6 md-col-6 lg-col-6"><h5 id="max-temp">max</h5></div>
+                <div class="weather-temp-item xs-col-6 sm-col-6 md-col-6 lg-col-6"><h5 id="min-temp">min</h5></div>
+            </div>
+            <div class="weather-items-other row">
+              <div class="weather-other-item xs-col-6 sm-col-6 md-col-6 lg-col-6"><h5 id="w-presure">presure</h5></div>
+              <div class="weather-other-item xs-col-6 sm-col-6 md-col-6 lg-col-6"><h5 id="w-humidity">humidity</h5></div>
+          </div>
+          </div>
+        </div>
+        <div class="xs-col-0 sm-col-0 md-col-1 lg-col-2">
+        </div>
+        </section>
+    </main>
+    <footer class="container-fluid">
+      <p>Javascript weather app &copy; by Babak Jahangiri </p>
+    </footer>
     <script src="js/weather.js"></script>
   </body>
 </html>
