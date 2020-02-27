@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+*{
+    margin: 0 0;
+}
+header{
+    min-height: 150px;
+    background-color: #008F90;
+    font-family: 'Open Sans', sans-serif, Helvetica, Arial ;
+    color: #fff;
+}
+
+.title{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.sub-title{
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+main{
+    background-color: #eaf5ff;
+    background-image: url("/images/bg/sky_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    min-height: 600px;
+}
+
+
+.main-weather{ 
+    background-color: #fff;
+    opacity:0.8;
+   min-height:600px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+ .weather-item{
+     align-self: center;
+     font-family: 'Open Sans', sans-serif, Helvetica, Arial ;
+     margin:5px;
+     width: 80%;
+      
+ }
+
+.main-weather h3{
+    font-family: 'Open Sans', sans-serif, Helvetica, Arial ;
+    font-size: 2em;
+    font-weight: 900;
+}
+#cities{
+    font-family: 'Open Sans', sans-serif, Helvetica, Arial ;
+    font-size: 1.6em;
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+ #city-name{
+font-size: 2.5em;
+font-weight: 600;
+ }
+
+ #weather-status-img{
+     height: 100px;
+     margin: 20px;
+ }
+ 
+#weather-desc{
+    text-align: center;
+    font-size: 1em;
+}
+
+#weather-temp{
+ font-size: 3em;
+}
+
+#feelslike{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.weather-items-temp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    font-family: 'Open Sans', sans-serif, Helvetica, Arial ;
+     
+}
+
+.weather-items-other{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.weather-temp-item > h5{
+    margin: 10px 0 10px 0;
+    font-family: 'Open Sans', sans-serif, Helvetica, Arial ;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+
+.weather-other-item > h5
+{
+    margin: 10px 0 10px 0;
+    font-family: 'Open Sans', sans-serif, Helvetica, Arial ;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+footer{
+    background-color:#004C4D;
+    min-height: 50px;
+    font-family: 'Open Sans', sans-serif, Helvetica, Arial ;
+    color: #fff;
+    font-size: 0.9em;
+    text-align: center; 
+}
+footer p{
+    padding-top: 10px;
+}
+
+
+@media (max-width: 575){
+    .weather-temp-item > h5{
+        margin: 7px 0 7px 0;
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+
+    .weather-other-item > h5
+    {
+        margin: 7px 0 7px 0;
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 576px) {
+    /* sm */
+    .weather-temp-item > h5{
+        margin: 10px 0 10px 0;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+    
+    
+    .weather-other-item > h5
+    {
+        margin: 10px 0 10px 0;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* md */
+
+    .weather-temp-item > h5{
+        margin: 10px 0 10px 0;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+    
+    
+    .weather-other-item > h5
+    {
+        margin: 10px 0 10px 0;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+
+    #weather-desc{
+        font-size: 1.2em;
+    }
+     
+  }
+  
+  @media (min-width: 992px) {
+    /* lg */
+    .weather-temp-item > h5{
+        margin: 10px 0 10px 0;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+    
+    
+    .weather-other-item > h5
+    {
+        margin: 10px 0 10px 0;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    #city-name{
+        font-size: 3.5em;
+        font-weight: 600;
+         }
+
+         #weather-desc{
+            font-size: 1.6em;
+        }
+
+        #feelslike{
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+  }
+  
+  @media (min-width: 1200px) {
+    /* xl */
+    .weather-temp-item > h5{
+        margin: 10px 0 10px 0;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    
+    
+    .weather-other-item > h5
+    {
+        margin: 10px 0 10px 0;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    #city-name{
+        font-size: 4em;
+        font-weight: 700;
+         }
+
+    #weather-desc{
+            font-size: 2em;
+        }
+
+        #feelslike{
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+  }
