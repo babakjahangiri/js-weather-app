@@ -22,7 +22,7 @@ header{
 
 main{
     background-color: #eaf5ff;
-    background-image: url("/images/bg/sky_bg.jpg");
+   /* background-image: url("/images/bg/sky_bg.jpg");*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size:cover;
