@@ -63,8 +63,8 @@ main{
 }
 
  #city-name{
-font-size: 2.5em;
-font-weight: 600;
+    font-size: 2.5em;
+    font-weight: 600;
  }
 
  #weather-status-img{
@@ -127,7 +127,7 @@ footer{
     text-align: center; 
 }
 footer p{
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 
