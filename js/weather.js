@@ -49,7 +49,7 @@ function setWeatherData(city,description,icon,temp,feels_like,temp_max,temp_min,
   document.getElementById("feelslike").innerHTML = `Feels like : ${Math.round(feels_like)}&#176;C`
   document.getElementById("max-temp").innerHTML = `Max Tempreture : ${Math.round(temp_max)}&#176;C`
   document.getElementById("min-temp").innerHTML = `Min Tempreture : ${Math.round(temp_min)}&#176;C`
-  document.getElementById("w-presure").innerHTML = `Presure : ${pressure}&#176;C`
+  document.getElementById("w-presure").innerHTML = `Presure : ${pressure} hPa`
   document.getElementById("w-humidity").innerHTML = `Humidity : ${humidity}%`
 }
 
