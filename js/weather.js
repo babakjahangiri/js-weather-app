@@ -55,8 +55,5 @@ function setWeatherData(city,description,icon,temp,feels_like,temp_max,temp_min,
 
 
 function setBackground(city){
-
-  document.getElementsByTagName("main")[0].style.backgroundImage = `url('https://${window.location.hostname}/images/bg/${city}.jpg')`;
-  
-
+  document.getElementsByTagName("main")[0].style.backgroundImage = `url('https://${window.location.hostname}/js-weather-app/images/bg/${city}.jpg')`;
 }
